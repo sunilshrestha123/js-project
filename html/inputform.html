@@ -5,36 +5,44 @@
 <head>
     <title>inform</title>
     <link rel="stylesheet" type="text/css" href="../css/app.css">
-<script src="../js/form.js"></script>
+    <script src="../js/form.js"></script>
 </head>
 
 <body>
-    <form>
-        <h2>Feedback FORM </h1>
-
+    <div class="">
+        <div style="text-align: center">
+            <h2>Feedback Form</h2>
+        </div>
+        <form>
             <div>
-            <label>First Name:</label>
-           
-            <input type='text' name="firstname" id="firstname" placeholder="Enter your first name" onblur="validateName()"></input><br>
-            <label id='error-first-name'></label>
-            
-        </div>
-        <div>
-            <label>Last Name:</label>
-   
-            <input type='text' name="emailname" id="lastname" placeholder="Enter your last name"></input></br>
-            <label id='error-last-name'></label>
-        
-        </div>
+                <label>First Name:</label>
+                <input type='text' name="firstname" id="firstname" placeholder="Enter your first name" onblur="validateName()"></input>
+                <br>
+                <label id='error-first-name'></label>
+
+
+            </div>
+            <div>
+                <label>Last Name:</label>
+                <input type='text' name="lastname" id="firstname" placeholder="Enter your last name" onblur="validateName()"></input>
+                </br>
+                <label id='error-last-name'></label>
+
+            </div>
 
             <label>Email:</label>
-            <input type='text' name="email" id="email" placeholder="Enter your email"></input>
+            <input type='text' name="email" id="email" placeholder="Enter your email" onblur="validateEmail()"></input>
+
             <br>
+            <label id='error-email'></label>
 
+            <input type="radio" name="gender" class="gender" value="male" checked> Male<br>
+           <input type="radio" name="gender" class="gender" value="gender"> Female<br>
+           <input type="radio" name="gender" class="gender" value="other"> Other<br><br>
             <button type="submit">submit</button>
-    </form>
+        </form>
 
-
+    </div>
 </body>
 
 
